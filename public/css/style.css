@@ -1,0 +1,1898 @@
+/* main style for every page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* start nav section */
+.nav {
+    padding: 5px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    position: relative;
+
+
+}
+
+.nav .logo img:hover {
+    box-shadow: 0px 0px 50px black;
+}
+
+.nav ul:not(.ulDrop) {
+    list-style: none;
+
+    padding-left: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(3, 1, 32);
+
+
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 25px 20px;
+
+}
+
+.nav .mainUlNav li .br {
+
+    margin-top: 2px;
+    height: 3px;
+    background-color: rgb(12, 2, 160);
+    display: none;
+    border-radius: 5px;
+}
+
+.nav .mainUlNav li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.nav .mainUlNav li button {
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav .mainUlNav li a:hover {
+    color: rgb(12, 2, 160);
+}
+
+.nav .mainUlNav li button:hover {
+    color: rgb(12, 2, 160);
+}
+
+.nav .mainUlNav .active a {
+    color: rgb(12, 2, 160);
+    text-shadow: 0px 0px .5px black
+}
+
+.nav .mainUlNav .active button {
+    color: rgb(12, 2, 160);
+    text-shadow: 0px 0px .5px black
+}
+
+.nav ul .active .br {
+    display: block;
+}
+
+.nav .drob_con {
+    background-color: rgb(3, 1, 32);
+    border: 2px solid black;
+    width: 200px;
+    position: absolute;
+    left: 110px;
+    top: 84px;
+    display: none;
+    padding: 10px 30px 10px 0px;
+
+}
+
+.nav .drob_con ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav .drob_con .ulDrop li {
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+
+
+}
+
+.nav .mainUlNav .active .drob_con .ulDrop a:not(.active) {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.nav .mainUlNav .active .drob_con .ulDrop .active a {
+    color: rgb(12, 2, 160);
+    text-shadow: 0px 0px .5px black
+}
+
+.nav #drob_con_activities {
+    position: absolute;
+    left: 280px;
+    top: 84px;
+}
+
+/* end nav section */
+/* start index page options section */
+
+.option {
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.options {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.option h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Courgette', cursive;
+}
+
+.option div:not(.options) {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.option div a {
+
+    display: inline-block;
+    margin-left: 17px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    transition: all .5s;
+}
+
+.option div a:hover {
+    transform: scale(.9);
+}
+
+.option div a img {
+
+    width: 150px;
+    height: 100px;
+}
+
+.option div a p {
+    font-size: 23px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    color: black;
+}
+
+/* start index page options section */
+
+/* start footer section */
+
+footer {
+    background-color: rgb(50, 41, 102);
+    padding: 30px 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+
+}
+
+footer .about {
+    width: 400px;
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer .about .logo {
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+footer .about .logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+}
+
+footer .about .logo img:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+footer .about .logo p {
+    font-family: 'Piedra', cursive;
+    font-size: 17px;
+
+}
+
+footer .about p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Courgette', cursive;
+
+}
+
+footer .about a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    margin-top: 10px;
+    display: block;
+}
+
+footer .about a:hover {
+    text-decoration: underline;
+}
+
+footer .about a i {
+    font-size: 20px;
+    color: wheat;
+}
+
+footer .quickLinks {
+    width: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .quickLinks h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Courgette', cursive;
+}
+
+footer .quickLinks a {
+    font-size: 18px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    display: block;
+    margin-bottom: 2px;
+
+}
+
+
+footer .quickLinks a:hover {
+    color: black;
+}
+
+footer .connect {
+    width: 350px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer .connect h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Courgette', cursive;
+}
+
+footer .connect a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    margin-top: 15px;
+    display: block;
+    font-weight: bolder;
+}
+
+footer .connect a:hover {
+    text-decoration: underline;
+}
+
+footer .connect a i {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+}
+
+footer .icon {
+    width: 250px;
+    padding-top: 50px;
+}
+
+footer .icon h1 {
+    font-size: 23px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+footer .icon ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+footer .icon ul li {
+    margin-right: 7px;
+    margin-top: 15px;
+
+}
+
+footer .icon ul li a {
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+footer .icon ul .facebook a {
+    background-color: white;
+    color: rgb(27, 1, 173);
+
+}
+
+footer .icon ul .site a {
+    background-color: white;
+    color: green;
+
+}
+
+footer .icon ul .whatsapp a {
+    background-color: green;
+    color: white;
+
+}
+
+footer .icon ul .tiktok a {
+    background-color: black;
+    color: white;
+
+}
+
+footer .icon ul .x a {
+    background-color: white;
+    color: black;
+
+}
+
+footer .icon ul .youtube a {
+    background-color: white;
+    color: red;
+
+}
+
+footer .icon ul .instagram a {
+    background-color: white;
+    color: rgb(189, 2, 126);
+
+}
+
+footer .icon ul .map a {
+    background-color: white;
+    color: green;
+
+}
+
+footer .icon ul li a:hover {
+    box-shadow: 0px 0px 20px black;
+    transform: scale(.9);
+}
+
+footer .icon ul li a i {
+    font-size: 25px;
+}
+
+/* end footer section */
+
+/* start aboutSection(about - pottery section */
+.aboutSection {
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.aboutSection section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+
+}
+.aboutSection .aboutVideo video {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.aboutSection h1 p {
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 10px;
+
+
+}
+
+.aboutSection h1 p i {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/** start info */
+.maps {
+    padding: 20px;
+    background-color: rgb(2, 2, 24, .9);
+
+}
+
+.map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.maps .themap {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'Courgette', cursive;
+    color: white;
+}
+
+
+.maps .btn {
+    margin-top: 40px;
+    padding: 15px 30px;
+    outline: none;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(50, 41, 102);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    transition: all .5s;
+    cursor: pointer;
+    animation-name: exploreBtn;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+
+.maps .btn:hover {
+    transform: scale(.9);
+}
+
+/* end aboutSection section */
+
+
+/* start anmation */
+
+@keyframes exploreBtn {
+    50% {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes changeBackgroundOfHeafer {
+
+    40% {
+        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url(../image/14.jpg);
+    }
+
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url(../image/1.jpg);
+    }
+
+
+}
+
+@keyframes changeBackgroundOfAboutPage {
+    7% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/2.jpg);
+    }
+
+    14% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/3.jfif);
+    }
+
+    21% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/4.jpg);
+    }
+
+    28% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/5.jpg);
+    }
+
+    35% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/6.jpg);
+    }
+
+    42% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/7.jpg);
+    }
+
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/8.jpg);
+    }
+
+    57% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/9.jpg);
+    }
+
+    64% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/10.jpg);
+    }
+
+    71% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/11.jpg);
+    }
+
+    78% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/12.jpg);
+    }
+
+    85% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/13.jpg);
+    }
+
+    95% {
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/1.jpg);
+    }
+}
+
+
+/* end anmation */
+
+
+
+.Safari h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Courgette', cursive;
+}
+
+.Safari p {
+    width: 80%;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    margin-top: 20px;
+
+}
+
+.Safari .p1 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 50px auto 0px;
+
+}
+
+.Safari .p1 div:not(.item-owl) {
+    width: 300px;
+}
+
+.Safari .p1 img {
+    width: 90%;
+    height: 30ch;
+    border-radius: 10%;
+    transition: all 1s;
+
+}
+
+
+
+.Safari .pe img {
+    display: inline-block;
+    width: 100%;
+    height: 20ch;
+    border-radius: 40%;
+    padding: 20px;
+}
+
+.Safari .pe p {
+    font-family: 'Chilanka', cursive;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.Safari .pe .pe1 {
+    padding: 10px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+/* start .owl-carousel-safari section */
+
+.Safari .owl-carousel-safari {
+    min-width: 90%;
+    height: 350px;
+    margin: 50px auto 30px;
+    overflow: hidden;
+    padding: 5px 5px;
+
+
+
+}
+
+
+
+.owl-carousel-safari .con_owl-carousel img:hover {
+    transform: scale(1.07);
+}
+
+/* end .owl-carousel-safari section */
+
+/* start .owl-carousel-camp section */
+
+.Safari .camps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+
+
+
+.Safari .one-camp .owl-carousel-camps .con_owl-carousel-camps {
+
+    width: 100%;
+    height: 230px;
+
+}
+
+.Safari .one-camp img {
+    width: 100%;
+    height: 100%;
+}
+
+.Safari .one-camp p {
+    font-family: 'Chilanka', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* end .owl-carousel-camp section */
+/********************************* style hotel page*********************/
+.services {
+    background-color: rgba(1, 1, 43, 0.9);
+    padding: 20px 0px 20px 0px;
+    overflow: hidden;
+
+}
+
+.services h2 {
+    font-size: 60px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    color: white;
+}
+
+.services .p1 {
+
+    min-width: 90%;
+    height: 250px;
+    overflow: hidden;
+    margin: 20px auto 0px;
+
+
+}
+
+.services .btn {
+    text-decoration: none;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(50, 41, 102);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    animation-name: exploreBtn;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    display: block;
+    margin: 20px auto 0px;
+}
+
+
+.services .btn:hover {
+    transform: scale(.9);
+}
+
+/** end hotel page*/
+.contact {
+    margin-top: 50px;
+    padding: 30px 30px 0px 60px;
+    background-color: rgb(240, 230, 240)
+}
+
+
+/* start open page image */
+
+.pageOfImage {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+    z-index: 5;
+    position: fixed;
+    overflow: none;
+
+}
+
+.close1 {
+
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: black;
+    font-size: 30px;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.close2{
+    display: none;
+}
+
+.pageOfImage img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*start contact us section*/
+
+.contact h2 {
+
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Courgette', cursive;
+    text-transform: capitalize;
+}
+.contact .contactSection {
+     padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact .contactSection .contact-us .H{
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+     font-size: 22px;
+     margin-top: 70px;
+}
+.contact .contactSection .contact-us .connect h1{
+    font-size: 20px;  
+    margin-bottom: 15px;
+    font-family: 'Courgette', cursive;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.contact .contactSection .contact-us .connect a{
+font-size: 17px;
+text-decoration: none;
+color: black;
+font-style: italic;
+margin-top: 10px;
+display: block;
+font-weight: bolder;
+}
+
+.contact .contactSection .contact-us .connect a:hover{
+text-decoration: underline;
+}
+.contact .contactSection .contact-us .connect .icon{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+    
+    }
+.contact .contactSection .contact-us .connect .icon ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+
+}
+
+.contact .contactSection .contact-us .connect .icon ul li {
+    margin-right: 7px;
+    background-color: transparent;
+}
+.contact .contactSection .contact-us .connect .icon ul li a {
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+.contact .contactSection .contact-us .connect .icon ul .facebook a {
+    background-color: white;
+    color: rgb(27, 1, 173);
+    
+}
+
+.contact .contactSection .contact-us .connect .icon ul .whatsapp a {
+    background-color:green ;
+    color: white;
+    
+}
+.contact .contactSection .contact-us .connect .icon ul .tiktok a {
+    background-color:black ;
+    color:white ;
+    
+}
+.contact .contactSection .contact-us .connect .icon ul .x a {
+    background-color: white;
+    color:black ;
+    
+}
+
+.contact .contactSection .contact-us .connect .icon ul .instagram a {
+    background-color:white ;
+    color:rgb(189, 2, 126) ;
+    
+}
+
+
+.contact .contactSection .contact-us .connect .icon ul li a:hover{
+    box-shadow: 0px 0px 20px black;
+    transform: scale(.9);
+}
+.contact .contactSection .contact-us .connect .icon ul li a i {
+    font-size: 25px;
+}
+
+.contact .contactSection .contact-us .connect .connect a i{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+}
+input[type=text],
+    input[type=email],
+    textarea {
+        display: block;
+        margin: 10px 0px;
+        padding: 10px 20px;
+        border: 1px solid #888;
+        border-radius: 10px;
+        width: 100%;
+        color: rgb(10, 1, 46);
+        font-weight: bold;
+        font-size: 20px;
+    
+    }
+    
+    label {
+        display: block;
+        margin-top: 20px;
+        text-decoration: underline;
+        color: rgb(10, 1, 46);
+        font-weight: bold;
+        font-size: 23px;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border: 1px solid rgb(32, 22, 68);
+        outline: none;
+    }
+    
+    .contact h3 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        color: blue;
+        text-shadow: 2px 2px 4px white;
+        text-transform: capitalize;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+    }
+    
+    input[type=submit] {
+        display: block;
+        margin: 20px auto 0px;
+        background-color: rgb(13, 133, 202);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 15px 70px;
+        color: white;
+        font-weight: bolder;
+        
+    }
+    
+    input[type=submit]:hover {
+    box-shadow: 0px 0px 20px black;
+    
+    
+        background-color: white;
+        color: rgb(5, 87, 134);
+        
+    }
+
+/*end contact us section*/
+/*start Trips section*/
+
+.infoTrips{
+    width: 80%;
+    margin: 50px auto 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    
+    
+
+}
+.trips{
+    padding: 20px;
+    background-color: rgb(2, 2, 24, .9);
+}
+.trips h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin: 10px 0px 20px;
+    font-family: 'Courgette', cursive;
+}
+.trips .allImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.trips .allImages .oneItem{
+    margin-top: 10px;
+    background-color: transparent;
+width: 350px;
+height: 300px;
+border-radius: 15px;
+
+cursor: pointer;
+overflow: hidden;
+}
+.trips .allImages .oneItem img{
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    transition: all 1s;
+}
+.trips .allImages .oneItem img:hover{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 20px black;
+}
+.trips .btn {
+    text-decoration: none;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: rgb(50, 41, 102);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    animation-name: exploreBtn;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    display: block;
+    margin: 20px auto 0px;
+}
+
+
+.trips .btn:hover {
+    transform: scale(.9);
+}
+
+/*end Trips section*/
+.touristAttractions{
+    margin-top: 50px;
+}
+.touristAttractions h1{
+    
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0px 20px;
+    font-family: 'Courgette', cursive;
+}
+
+.touristAttractions .onePlace{
+    padding: 15px;
+}
+.touristAttractions .onePlace h2{
+ 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    cursor: pointer;
+}
+.touristAttractions .onePlace h2 i{
+    font-size: 20px;
+}
+.touristAttractions .onePlace h2:hover{
+text-decoration: underline;
+}
+.touristAttractions .onePlace .infoPalce{
+     display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+    
+    
+}
+.touristAttractions .onePlace .infoPalce  h1{
+    
+    color: black;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    
+}
+
+/*
+p//////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--------------------------- screen wigth >850px------------------------- */
+
+
+@media (min-width :950px) {
+    /* start navbar style */
+
+    .nav ul {
+        display: inline-block;
+    }
+
+    .nav .logo img {
+        margin-left: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+        transition: all .2s;
+
+    }
+
+    .nav .menu {
+        display: none;
+    }
+ .blockNavBar{
+        display: none;
+    }
+
+    .margin {
+        margin-top: 100px;
+    }
+
+    /* start backgroung image for header */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/Header3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    animation-name: changeBackgroundOfHeafer;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
+}
+
+/* end backgroung image for header */
+
+    .header .content {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50, -50);
+        transition: transform 1s;
+        font-family: 'Piedra', cursive;
+        background-color: transparent;
+    }
+
+    .header .content .a {
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 60px;
+        text-shadow: 3px 3px 10px rgb(50, 41, 102);
+
+
+    }
+
+    .header .content .b {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 3px 3px 10px rgb(50, 41, 102);
+    }
+
+    .header .content .c {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 80px;
+        text-align: center;
+        text-shadow: 3px 3px 10px rgb(50, 41, 102);
+    }
+
+    .header a .btn {
+        padding: 15px 40px;
+        outline: none;
+        position: absolute;
+        top: 85%;
+        left: 40%;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: rgb(50, 41, 102);
+        box-shadow: 0px 0px 10px black;
+        border-radius: 10px;
+        transition: all .5s;
+        cursor: pointer;
+        animation-name: exploreBtn;
+        animation-duration: 4s;
+        animation-delay: 5s;
+    }
+
+    .header a .btn:hover {
+        transform: scale(.9);
+    }
+    
+    /* end main header */
+    
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--------------------------- screen wigth <850 -------------------------- */
+
+@media (max-width :950px) {
+    /* start navbar style */
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav .menu {
+        display: inline-block;
+        z-index: 5;
+        color: black;
+        padding: 30px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+        font-size: 30px;
+
+    }
+
+    .nav .logo img {
+        margin-left: 50px;
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+        transition: all .2s;
+
+    }
+
+    .margin {
+        margin-top: 50px;
+    }
+
+    /* start backgroung image for header */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-attachment: fixed;
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    animation-name: changeBackgroundOfHeafer;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
+}
+
+/* end backgroung image for header */
+
+    .header .content {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50, -50);
+        transition: transform 1s;
+        font-family: 'Piedra', cursive;
+        background-color: transparent;
+    }
+
+    .header .content .a {
+        text-align: left;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 50px;
+        text-shadow: 3px 3px 10px rgb(50, 41, 102);
+
+
+    }
+
+    .header .content .b {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 40px;
+        text-align: center;
+        text-shadow: 3px 3px 10px rgb(50, 41, 102);
+    }
+
+    .header .content .c {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 60px;
+        text-align: left;
+        text-shadow: 3px 3px 10px rgb(50, 41, 102);
+    }
+    .header a .btn {
+        padding: 15px 40px;
+        outline: none;
+        position: absolute;
+        top: 85%;
+        left: 36%;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;       
+        background-color: rgb(50, 41, 102);
+        box-shadow: 0px 0px 10px black;
+        border-radius: 10px;
+        transition: all .5s;
+        cursor: pointer;
+        animation-name: exploreBtn;
+        animation-duration: 4s;
+        animation-delay: 5s;
+    }
+
+    .header a .btn:hover {
+        transform: scale(.9);
+    }
+
+
+    /* end main header */
+/*start menu section*/
+.blockNavBar{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,.9);
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    position: fixed;
+
+}
+
+.blockNavBar ul:not(.ulDrop) {
+    list-style: none;
+
+    padding: 10px;
+    background-color: rgb(3, 1, 32);
+
+
+}
+
+.blockNavBar ul li {
+    display: block;
+    padding: 15px 10px;
+
+}
+
+.blockNavBar .mainUlNav li .br {
+
+    margin-top: 2px;
+    height: 3px;
+    width: 150px;
+    background-color: rgb(12, 2, 160);
+    display: none;
+    border-radius: 5px;
+}
+
+.blockNavBar .mainUlNav li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.blockNavBar .mainUlNav li button {
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.blockNavBar .mainUlNav li a:hover {
+    color: rgb(12, 2, 160);
+}
+
+.blockNavBar .mainUlNav li button:hover {
+    color: white;
+}
+
+.blockNavBar .mainUlNav .active a {
+    color: rgb(12, 2, 160);
+    text-shadow: 0px 0px .5px black
+}
+
+.blockNavBar .mainUlNav .active button {
+    color: rgb(12, 2, 160);
+    text-shadow: 0px 0px .5px black
+}
+
+
+
+.blockNavBar ul .active .br {
+    display: block;
+}
+
+
+.blockNavBar .drob_con {
+    
+    background-color: transparent;
+    
+    display: none;
+    padding: 0px;
+
+}
+
+.blockNavBar .drob_con ul {
+    list-style-type: none;
+    width: 200px;
+    padding: 0;
+    
+}
+
+
+.blockNavBar .drob_con .ulDrop li {
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+ 
+
+
+}
+
+.blockNavBar .mainUlNav .active .drob_con .ulDrop a:not(.active) {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.blockNavBar .mainUlNav .active .drob_con .ulDrop .active a {
+    color: rgb(12, 2, 160);
+    text-shadow: 0px 0px .5px black
+}
+.close2{
+    display: block;
+}
+
+/*end menu section*/
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--------------------------- screen wigth >850px------------------------- */
+
+
+@media (min-width :1000px) {
+    .nav .logo img {
+        margin-left: 20px;
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+        transition: all .2s;
+
+    }
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--------------------------- screen wigth >600px------------------------- */
+@media (min-width:600px) {
+
+    .maps .map .p {
+        width: 600px;
+        margin-top: 30px;
+
+
+    }
+
+    .maps .map .p .p1 {
+        width: 600px;
+        color: white;
+
+    }
+
+    .maps .map .p .p2 {
+        width: 600px;
+        margin-top: 30px;
+        color: white;
+    }
+
+    .maps div:not(.map) {
+        width: 600px;
+        height: 400px;
+
+    }
+
+    .maps div iframe {
+        border: 2px solid black;
+        width: 600px;
+        height: 400px;
+        border-radius: 20px;
+
+    }
+
+    .aboutSection .divBackgroundImage {
+        width: 600px;
+        height: 400px;
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation-name: changeBackgroundOfAboutPage;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .aboutSection .aboutVideo {
+        width: 600px;
+        height: 400px;
+
+    }
+    
+
+    .aboutSection section {
+        width: 600px;
+        padding: 10px;
+    }
+
+    .aboutSection section img {
+        display: block;
+        width: 46%;
+        height: 200px;
+        margin-left: 20px;
+
+    }
+
+    .aboutSection h1 {
+        width: 600px;
+
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .Safari .one-camp section {
+        width: 400px;
+        height: 250px;
+        box-shadow: 0px 0px 20px black;
+        padding: 7px 50px;
+        overflow: hidden;
+    }
+
+    .Safari .one-camp {
+        width: 400px;
+        height: 300px;
+        margin: 20px 0px 0px 15px;
+    }
+
+    .Safari .owl-carousel-safari .con_owl-carousel {
+
+        height: 250px;
+        overflow: hidden;
+        margin: 10px 5px;
+
+    }
+
+    .Safari .owl-carousel-safari .con_owl-carousel img {
+        box-shadow: 0px 0px 10px black;
+        border-radius: 12px;
+
+        width: 300px;
+        height: 100%;
+        transition: transform .5s;
+
+
+    }
+
+    .services .p1 div img {
+        box-shadow: 0px 0px 10px black;
+        width: 300px;
+        height: 250px;
+        transition: .4s;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .services img:hover {
+        transform: scale(1.08);
+    }
+
+    .services .p1 .item-owl {
+        height: 250px;
+        overflow: hidden;
+        margin: 0px 5px;
+
+    }
+
+     
+/*start contact us section*/
+
+.contact .contactSection .contact-us{
+    width: 400px;
+    
+    margin-left: -20px;
+}
+
+.contact .contactSection .contact-us .connect{
+    width: 350px; 
+    
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact .cform {
+
+    padding: 40px 40px 80px 40px;
+    margin: auto;
+    width: 600px;
+}
+
+
+/*end contact us section*/
+
+/*start places section*/
+
+
+.touristAttractions .onePlace .infoPalce .h1{
+    width: 600px;
+    padding: 20px 0px 0px;
+}
+.touristAttractions .onePlace .infoPalce .h2{
+    width: 600px;
+}
+
+.touristAttractions .onePlace .infoPalce .imagePlace{
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+.touristAttractions .onePlace .infoPalce .imagePlace img{
+    width: 600px;
+    height: 350px;
+    cursor: pointer;
+    
+}
+.touristAttractions .onePlace .infoPalce .imagePlace video{
+    width: 600px;
+    height: 350px;
+    
+    
+}
+/*end places section*/
+
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+/*--------------------------- screen wigth <600px------------------------- */
+@media (max-width:600px) {
+
+    .header .content {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        transform: translate(-50, -50);
+        transition: transform 1s;
+        font-family: 'Piedra', cursive;
+        background-color: transparent;
+    }
+    
+    .header a .btn {
+        padding: 15px 40px;
+        outline: none;
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: rgb(50, 41, 102);
+        box-shadow: 0px 0px 10px black;
+        border-radius: 10px;
+        transition: all .5s;
+        cursor: pointer;
+        animation-name: exploreBtn;
+        animation-duration: 4s;
+        animation-delay: 5s;
+    }
+    .maps .map .p {
+        width: 100%;
+        margin-top: 30px;
+
+
+    }
+
+    .maps .map .p .p1 {
+        width: 100%;
+        color: white;
+
+    }
+
+    .maps .map .p .p2 {
+        width: 100%;
+        margin-top: 30px;
+        color: white;
+    }
+
+    .maps div:not(.map) {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .maps div iframe {
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+
+    }
+
+    .aboutSection .divBackgroundImage {
+        width: 90%;
+        height: 400px;
+        background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../image/about/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation-name: changeBackgroundOfAboutPage;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+
+    }
+    .aboutSection .aboutVideo {
+        width: 100%;
+        height: 400px;
+
+    }
+   
+    .aboutSection section {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .aboutSection section img {
+        display: block;
+        width: 70%;
+        height: 200px;
+        margin-left: 20px;
+
+    }
+
+    .aboutSection h1 {
+        width: 90%;
+
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .Safari .one-camp section {
+        width: 95%;
+        height: 250px;
+        box-shadow: 0px 0px 20px black;
+        padding: 7px 20px;
+        overflow: hidden;
+    }
+
+    .Safari .one-camp {
+        width: 90%;
+        height: 300px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    .Safari .owl-carousel-safari .con_owl-carousel {
+
+        box-shadow: 0px 0px 10px black;
+        width: 90%;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 12px;
+        margin: 10px 15px;
+
+    }
+
+    .Safari .owl-carousel-safari .con_owl-carousel img {
+        width: 100%;
+        height: 100%;
+        transition: transform .5s;
+
+
+    }
+
+    .services .p1 div img {
+        box-shadow: 0px 0px 10px black;
+
+        width: 100%;
+        height: 100%;
+        transition: transform .5s;
+        cursor: pointer;
+        border-radius: 12px;
+
+
+    }
+
+    .services img:hover {
+        transform: scale(1.08);
+    }
+
+    .services .p1 .item-owl {
+        width: 90%;
+        height: 250px;
+        overflow: hidden;
+        margin: 10px 15px;
+        border-radius: 12px;
+      
+    }
+
+     
+/*start contact us section*/
+.contact {
+    margin-top: 50px;
+    padding: 20px 10px ;
+    background-color: rgb(240, 230, 240)
+}
+.contact .contactSection .contact-us{
+    width: 95%;
+    
+    margin-left: -20px;
+}
+
+.contact .contactSection .contact-us .connect{
+    width: 100%; 
+    
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact .cform {
+
+    padding: 40px 0px 20px;
+    margin: auto;
+    width: 95%;
+}
+/*end contact us section*/
+.trips .allImages .oneItem{
+    margin-top: 10px;
+    background-color: transparent;
+width: 90%;
+height: 300px;
+border-radius: 15px;
+
+cursor: pointer;
+overflow: hidden;
+}
+.trips .allImages .oneItem img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    transition: all 1s;
+}
+/*start places section*/
+
+.touristAttractions .onePlace .infoPalce .h1{
+    width: 100%;
+    padding: 20px 0px 0px;
+}
+.touristAttractions .onePlace .infoPalce .h2{
+    width: 100%;
+}
+
+.touristAttractions .onePlace .infoPalce .imagePlace{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+.touristAttractions .onePlace .infoPalce .imagePlace img{
+    width: 100%;
+    height: 300px;
+    cursor: pointer;  
+}
+.touristAttractions .onePlace .infoPalce .imagePlace video{
+    width: 100%;
+    height: 300px;
+    
+    
+}
+/*end places section*/
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/

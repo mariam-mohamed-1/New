@@ -1,0 +1,16 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "Tunis Tourist Village in Fayoum Egypt - قرية تونس السياحية بالفيوم مصر",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node demo.js"
+  },
+  "author": "Mariam Mohamed Elhadad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.11"
+  }
+}
