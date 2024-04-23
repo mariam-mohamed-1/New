@@ -19,10 +19,7 @@ exports.getConnect=(req , res , next)=>{
     res.sendFile(path.join(__dirname,'../' , 'views', 'contact.html'));
     
 };
-exports.getStay=(req , res , next)=>{
-    res.sendFile(path.join(__dirname,'../' , 'views', 'stay.html'));
-    
-};
+
 exports.postForm =(req , res , next)=>{
         // Get the subject and recipient email address fr
         const data = req.body;
@@ -66,4 +63,8 @@ exports.postForm =(req , res , next)=>{
         res.redirect('/');
         
  };
+ exports.getMap=(req , res , next)=>{
+    res.sendFile(path.join(__dirname,'../' , 'views', 'sitemap.xml'));
+    
+};
 

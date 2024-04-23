@@ -8,6 +8,7 @@ router.get('/' ,control.getHome );
 
 router.get('/about' ,control.getAbout );
 router.get('/contact-us' ,control.getConnect );
-router.post('/',control.postForm)
+router.post('/',control.postForm);
+router.get('/getMap', control.getMap);
 
 module.exports.Router=router;
