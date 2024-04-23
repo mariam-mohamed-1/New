@@ -63,8 +63,5 @@ exports.postForm =(req , res , next)=>{
         res.redirect('/');
         
  };
- exports.getMap=(req , res , next)=>{
-    res.sendFile(path.join(__dirname,'../' , 'views', 'sitemap.xml'));
-    
-};
+
 
